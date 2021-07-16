@@ -10,7 +10,25 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Jul 2021 11:17:37 +0900</lastBuildDate><atom:link href="https://ilemonellen.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Jul 2021 11:33:15 +0900</lastBuildDate><atom:link href="https://ilemonellen.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Back</title>
+      <link>https://ilemonellen.github.io/post/back/</link>
+      <pubDate>Fri, 16 Jul 2021 11:33:15 +0900</pubDate>
+      
+      <guid>https://ilemonellen.github.io/post/back/</guid>
+      <description>回想 好久没有在hugo上更新了，这段时间里发生不少的事情。首先，我自己已经成功搭建部署了一个hexo博客对于我来说这无疑是自身的一种突破，之前尝试了很多次都是不清楚哪里的依赖出了问题，后来才转向搭建hugo的。其次，之前我的GitHub账号疑似被机器人监视了。
+我注意到那个账号注册时间是七个小时之前，但是已经关注了200+人，没有任何的活跃记录，没有任何的star，所以我觉得很是可疑，因为我看到过消息说有些是机器人账号，用来监视一些不被当局所认可的项目。因此我决定暂时对于这个GitHub账户进行“冷藏”。我自己心里很清楚，我如果不那么做的话，我很可能会有别的麻烦。
+hexo or hugo 最后的问题就是，我现在觉得hexo用来比hugo要来的顺手，原因我觉得无非以下几点：
+1.hexo的插件更多，可支持和扩展的功能也就多一些。hugo相对较少，而且hugo还分为hugo和hugo_extended两个版本，前者对于自定义CSS是不支持的，后者才能。
+2.hexo的动画过渡效果更好，主题也更加的美观。hugo的主题一般不自带过渡动画，而且主题大多个人都不怎么喜欢。
+3.hexo写作时对于html.css等标签支持更加的友好就算是Markdown链接也支持在新标签页打开。hugo现在的Markdown引擎只支持在内部进行跳转。所以说单就一个Markdown链接跳转的问题来说，我还是更加青睐hexo。
+4.hugo虽说现在在GitHub上面的star也不少了，但是对于一个新手来说或者是非编程人士来说，可参考的搭建教程资料还是比较少的。
+5.对于hexo来说，博客的生成不需要配置什么环境变量，但是hugo在搭建过程中，如果你是下载的二进制文件的话，就要对二进制文件进行环境变量的配置。每一次hugo新版本的发布，如果你要更新的话就要更新二进制文件。所以，个人觉得对于使用Windows初次搭建的用户来说不算是特别友好。
+6.hugo的命令实在是让我觉得又长又臭，就单说博客预览这一件事情，hexo只要输入hexo s就可以了，但是hugo就是要完完整整的输入hugo server -D。而且只要当你把文章的draft改为true时候，才能实现预览，改为false才能生成本地静态资源提交上去。真的让人感觉到有些心累。
+计划 hexo主要用来记录学习类的，hugo主要用来纯文字书写，主要是生活类的。后面关于日常隐私保护类和技巧类的博客应该会接着写。但是教程类的估计就只会些hugo博客相关的了。</description>
+    </item>
+    
     <item>
       <title>public dns service</title>
       <link>https://ilemonellen.github.io/post/6/</link>
