@@ -1,79 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>FreedomCamp</title>
-    <link>https://ilemonellen.github.io/</link>
-    <description>Recent content on FreedomCamp</description>
+    <title>文字博客 on FreedomCamp</title>
+    <link>https://ilemonellen.github.io/categories/%E6%96%87%E5%AD%97%E5%8D%9A%E5%AE%A2/</link>
+    <description>Recent content in 文字博客 on FreedomCamp</description>
     <image>
       <url>https://ilemonellen.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://ilemonellen.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Jul 2021 11:17:37 +0900</lastBuildDate><atom:link href="https://ilemonellen.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>public dns service</title>
-      <link>https://ilemonellen.github.io/post/6/</link>
-      <pubDate>Fri, 16 Jul 2021 11:17:37 +0900</pubDate>
-      
-      <guid>https://ilemonellen.github.io/post/6/</guid>
-      <description>DNS简介
-public dns service (公共域名解析服务)：顾名思义，就是将我们访问的域名解析为对应的IP地址。
-例如：github.com是GitHub的域名
-但是我们在计算机上ping 这个域名的时候，我们就可以看到他的IP地址，下图所示：
-所以，我们知道的是一个网站的IP是不容易让人记住的，但是域名就相对来说更加好记一些。而DNS就是将我们记住的域名转为对应的IP，然后再向目标服务器发送数据请求。正因为如此，快速，安全的DNS就显得尤为重要。如果一个DNS的解析速度不够快，不够安全，那么你上网的速度和安全性都是很难得到保证的。所以在这里我整理了 两份公共DNS解析服务的列表,一份适合国内，一份适合有能力自由上网的人。
-公共DNS列表    供应商 首要DNS 备用DNS 说明     阿里DNS IPV4:223.5.5.5 IPV4:223.6.6.6 阿里的DNS解析服务应该是国内最好的了，基本上也没有被污染，解析速度也很不错，国内建议首选。   腾讯DNS IPV4:119.29.29.29  同时支持同时支持 DoH 与 DoT。   OneDNS 拦截版：117.50.11.11 52.80.66.66 纯净版117.50.10.10 52.80.52.52 微步在线出品，定位于小众用户的精品公共DNS服务，通过大数据分析实现了恶意网站拦截、广告过滤和上网加速功能   360公共DNS 中国电信/铁通/移动：101.226.4.6，218.30.118.6， 中国联通：123.125.81.6，140.207.198.6  拥有独立的虚拟根节点，以及运营商和360安全中心双重应急灾备机制，服务器集群覆盖全国28个省市和国际主要地区，能够提供最短路径的DNS解析响应   114DNS IPV4:114.114.114.114 IPV4:114.114.115.115 DNS解析成功率超高，与ISP的DNS相比，能访问更多的国内外网站.阿里之外的首选。       Provider Primary DNS Secondary DNS Description     Google IPV4:8.</description>
-    </item>
-    
-    <item>
-      <title>Windows Terminal配置</title>
-      <link>https://ilemonellen.github.io/post/5/</link>
-      <pubDate>Fri, 16 Jul 2021 11:12:29 +0900</pubDate>
-      
-      <guid>https://ilemonellen.github.io/post/5/</guid>
-      <description>Windows Terminal](https://github.com/microsoft/terminal)是一款集成了Windows上的PowerShell、CMD以及Windows Linux子系统的终端。Windows自身的命令控制台过于简陋，所以我们不妨使用Windows Terminal来替代cmd和power shell，只需要简单的配置一些功能，就能实现很多常用的Linux操作命令。过程如下：
- Vim配置 Vim是一款优秀的Linux文本编辑器。我们在Windows下编辑一些一些配置文件的时候很有作用。
-1.首先，我建议先去下载一个Vim,安装的时候注意路径中不要包含中文路径。
-2.然后，配置环境变量。找到Vim.exe的二进制文件位置，例如我的Vim安装位置在C:\Program Files (x86)\Vim\vim82,然后到设置——系统——关于——高级系统设置——环境变量——path——编辑——新建。然后将Vim.exe的路径复制粘贴上去。（例如我的就是C:\Program Files (x86)\Vim\vim82）。然后重新打开Windows Terminal终端输入vim -h检验环境变量是否配置成功。
-Git Bash配置 GitBash是一个用于MicrosoftWindows环境的应用程序，被集成在git下面。简明扼要的说一句就是能够实现很多Linux命令操作。更多资料——https://zh.wikipedia.org/zh-cn/Git
-其实，我自己在网上看到很多的将Git Bash配置到Windows Terminal下都是通过修改Windows Terminal中的JSON文件来实现的。但是实际中，Windows Terminal已经精简了很多的冗长的代码，添加配置文件也变得更加的简单。
-1.首先，你需要去下载一个Git 或者是Git for Windows,两者区别我自己目前使用的是Git。
-2.打开Windows Terminal终端，进入设置——添加配置文件。填写名称，选择文件路径（找到自己git bash.exe的二进制文件路径）例如我的git 的bash.exe在D:\BigDataTools\Git\Git\bin下。你可以添加一个图标（当然也可以不要）。之后重启终端启用git bash输入git &amp;ndash;version看看能否得到git版本，可以的话就代表成功了。
-但是，完成相关的bash配置之后我们会发现，当我们使用命令浏览磁盘下具有中文的文件夹时会出现乱码现象。其实，这个很好解决，我们只需要在Git文件路径下找到bash.bashrc文件，例如我的路径D:\BigDataTools\Git\Git\etc。 然后打开文件进行编辑，在文件后面添加
-export LANG=&amp;#34;zh_CN.UTF-8&amp;#34; export LC_ALL=&amp;#34;zh_CN.UTF-8&amp;#34; 之后，保存退出，重启终端，这个时候我们就会发现问题解决了。
-其实将Git Bash集成到Windows Terminal中之后，完全也可以使用Vim，不需要下载添加VIM。当然，你甚至可以选择一个cmder直接下载使用，内置git bash，无需任何的配置，省时省力。
- 参考博客：https://blog.csdn.net/jun8148/article/details/97245249 Bash图标: </description>
-    </item>
-    
-    <item>
-      <title>浏览器上网的日常防护</title>
-      <link>https://ilemonellen.github.io/post/4/</link>
-      <pubDate>Fri, 16 Jul 2021 11:07:21 +0900</pubDate>
-      
-      <guid>https://ilemonellen.github.io/post/4/</guid>
-      <description>关于网络安全和个人隐私保护的博客，我到时候应该会写一个系列的出来。这一期主要是说说比较容易上手，日常生活中很容易做到的一些防护措施，这一次的主要还是一些浏览器的使用技巧分享和简单的知识普及。
-在此之前，我们必须知道一个名词叫做——”浏览器指纹“。那么什么叫做浏览器指纹呢？下面有专门的文章会详细解释。现在我们只要知道通过浏览器指纹可以对用户进行画像，追踪。下面这个例子你应该在生活中遇到过。
-例如，你在一个网站上看到一个商品，点击了解了相关的信息，但是并没有购买，那么第二天当你打开类似的网站的时候，你就看到相关的广告推荐。这种现象并非偶然，而是通过一系列的技术手段实现的。作为个人我们能当然不希望自己在网络上的行为活动被一些幕后的个人和公司监视。所以我们需要了解相关的追踪方法然后采取相对应的措施。
-一：什么是浏览器指纹——追踪技术 “浏览器指纹”是一种通过浏览器对网站可见的配置和设置信息来跟踪Web浏览器的方法。这些信息包括：你的系统信息，你使用的浏览器型号，你IP所在的位置等等。而当你访问一个网站的时候，这个网站往往会弹出提示——是否要接受我们使用cookie。现在描绘浏览器用户画像主要是通过Cookie,webRTC等进行追踪定位用户。相关专业性的理论不需要了解太多，你只需要知道你每浏览一个网站，网站都会在你磁盘成生成“临时文件”（暂且把cookie称之为临时文件，虽然不严谨，但是好理解），而网站的运营者可以通过“临时文件”来知道你上次来这个网站是什么时候，你还去过哪些网站，之后各种各样的“猜你喜欢”就来了。
-二：日常的反追踪手段 迅速了解相关知识，可以参考这个视频：
-1.选择合适的浏览器 浏览器是我们打开互联网世界的大门的必备工具，正因为如此使用选择一款好的浏览器是十分重要的，我是不推荐你使用国内的浏览器的（例如：QQ浏览器，360浏览器等），如果你更加注重自己的隐私，那么你最好不要使用各种大陆定制版（例如中国版edge,firefox，opera等），你甚至可以考虑选择使用隐私保护级别最高的Tor。我在我的另一篇帖子中有讲过几个主流浏览器，以及他们的主要特点——传送门
-2.掌握浏览器的高级用法 搜索引擎——浏览器的灵魂 之前我说过：浏览器就像一个杯子，至于用来装水还是装酒，这个结果其实是取决于你的。我在生活中看到不少人拿着firefox,chrome浏览器用着百度，2345等搜索引擎。其实选择不同的搜索引擎带给你的体验是不一样的。例如现在满屏广告的百度搜索结果，高效搜索的Google搜索，以及注重用户隐私的duckduckgo,startpage，甚至是开源的搜索引擎yacy。他们在浏览器中扮演的角色是相同的，但是不同的引擎之间的体验是天差异别的。由于GFW的缘故，国外很多注重隐私的搜索引擎在大陆是是不被允许使用的。如果你有突破GFW的能力，可以参考这里一份搜索引擎列表（包含但不仅限于需要突破封锁的搜索引擎）
-控制浏览器权限——保护自己的隐私 适当的给予浏览器的一些权限是必要的。否则影响我们自己的上网体验，或者直接影响浏览器正常工作。但是有一些权限是需要我们进行控制的。以Chrome浏览器为例：例如使用位置信息之前询问，阻止调用麦克风和摄像头。阻止第三方的cookies，启用安全的DNS——DNS的重要性，当然，有能力的话，我还是比较推荐使用国外的公共DNS服务。定期检查自己的密码是否泄露。这些都可以在Chrome的设置——安全检查，隐私和安全中进行设置。这些设置都是能够进一步保护我们的个人隐私和上网安全。顺便说一下，你可以使用firefox monitor来检查自己的邮箱密码是否泄露过。毕竟现在我们都很习惯在浏览器上登录账户，方便的日后的同步。
-使用浏览器扩展——充分发挥浏览器能力 我个人认为扩展的使用就是浏览器的另一个核心要素，地位仅次于搜索引擎的选择——浏览器扩展的介绍和使用
-通过选择一些合适的扩展，能够很好的提升我们的上网体验，提升上网防护。这里简单列举几个热门的扩展程序。
-关于浏览器插件的介绍我之前的博客中有说到，这里就不再赘述，不清楚的话看这里
-顺便提一句，之前我自己将扩展和插件两者混为一谈了，但是二者的区别很明显。这个事情下次我再详细解释，这里先给自己挖一个坑。
- 三：提升自己的安全意识 无论使用什么工具，我们都不能保证自己在上网过程中绝对的安全。作为个人，我们面对的往往是一个组织或者是一个公司（之前QQ PC端启动之后就开始遍历C:\Users\PC用户名\AppData\Local\Google\Chrome\User Data下的所有目录，该目录下保存了chrome的cookie，所有QQ很快就能知道你浏览了哪些网站，然后给你投放广告）俗话说，双拳难敌四手，特别是当我们遇到像腾讯，阿里巴巴，京东这样的大型科技互联网公司时，他们已经掌握了我们太多的个人信息，有了一个完整且庞大的数据库。与其我们寄希望于这些外在的工具，我们其实更需要的是提升自己的网络安全意识。所以关于网络安全和个人隐私保护的博文我会写一个系列。了解相关的网络安全知识能够让我们尽可能的远离被追踪的危险，这里列举一些相关的网站和文章。
-相关推荐 1.V2EX：一个中文技术交流社区，里面有很多的大佬。之前勾正服务事件,QQ读取用户浏览记录就是社区里面的大佬发现的。
-2.Seebug:一个专注于网络安全的个人技术博客网站。
-3.编程随想——如何保护隐私：这篇文章比较系统的说明了我们在网络世界中如何保护自己的隐私安全。
-4.how-to-secure-anything：这是GitHub上一个网络安全工程师的心得文章。
-5.Hacker News：这是一个收集全世界网络安全事件的网站，纯英文，适合高级开发人员和网络安全人员。
-6.iYouPort：这是一个专注于躲避于企业，国家监控，倡导隐私属于个人的网站。
-7.Digital-Privacy:一个关于数字隐私搜集、保护、清理集一体的方案,外加开源信息收集(OSINT)对抗
-总结：真正的自由，并不意味着可以随心所欲，而是可以自由地做正确的事情。一家之言，且看且听 </description>
-    </item>
-    
+    <lastBuildDate>Fri, 16 Jul 2021 11:01:37 +0900</lastBuildDate><atom:link href="https://ilemonellen.github.io/categories/%E6%96%87%E5%AD%97%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows中的使用技巧</title>
       <link>https://ilemonellen.github.io/post/3/</link>
@@ -166,43 +103,6 @@ export LANG=&amp;#34;zh_CN.UTF-8&amp;#34; export LC_ALL=&amp;#34;zh_CN.UTF-8&amp
 48.功利性读书会让人自高自大,孤标傲世。知识经常会让人骄傲,给人带来智力上的优越感,让你瞧不起人,无法与人建立正常的人际关系。
 49.繁体的愛中间是有个心的， 爱不是放纵的借口， 真正的爱，一定与责任与克制有关。</description>
     </item>
-    
-    <item>
-      <title>我浏览器中那些不可或缺的扩展</title>
-      <link>https://ilemonellen.github.io/post/1/</link>
-      <pubDate>Fri, 16 Jul 2021 10:49:24 +0900</pubDate>
-      
-      <guid>https://ilemonellen.github.io/post/1/</guid>
-      <description>我其实自己早在GitHub上的文章中就有写到插件对于浏览器的重要性，合理的使用一些插件能让你的浏览器如虎添翼。在这里我也打算说说自己浏览器中那些不可或缺的插件神器，到时候有人再问我使用的什么插件的时候，我就直接把这个博客给他看。
- ADguard 这是一个广告过滤插件，能够帮你过滤掉网站上你不想看到的广告，当然，也可以完美过滤YouTube视频中的广告（本人亲测有效）。广告过滤插件那么多，有这一个就够了。
-Dark Reader 这是一个“护眼插件”，通过这个插件你可以轻松的将大部分网页渲染成黑色，以此来达到降低夜间白色背景光对眼睛的刺激。
-bitwarden 这是一款开源的密码管理软件。开源的密码软件不在少数，但是这个上手就比较简单。
-privacy Badger 这是一个自动学习并且能够阻止网页上不可见追踪器的插件。
-Randrom User-Agent 自动随机的改变用户的浏览器头部信息，减少被刻画用户画像的风险。
-Pocket 将自己想要稍后阅读或者是自己喜欢的文章，网页收藏起来。算是一个收集箱。
-PopupOFF 阻止顽固的网页弹窗和多余的页面边缘元素，提升阅读和浏览体验。
-Clearurls 一款开源插件，去除url中的跟踪元素，保护个人隐私。
-Tampermonkey 浏览器中功能最强大的插件，能够配合**Greasy fork**这个脚本网站实现各种各样的功能。
-Disconnet 能够提升网页的响应速度，阻止网页追踪器，保护上网安全。
-IDM 这是一个多线程的下载插件（需要付费），能够自动嗅探资源，断点恢复下载，多线程 高速下载，下载大文件用它就对了。
-WebRTC Leak Prevent 禁用自己浏览器上的webRTC，保护自己的真实IP不泄露。
-https://ip.voidsec.com/ 一个用来检测webRTC有没有泄露你真实IP的网站，没有泄露则webRTC处没有IP显示。 网站管理员可以轻易地通过WebRTC看到用户的真实IP地址，即使用户使用VPN来隐藏自己的IP，也可以被追踪到。
-解决方法： Mozilla Firefox：在地址栏输入 “about:config”，搜“media.peerconnection.enabled” 并双击将值改为 “false”，WebRTC 将被关闭。
-Google Chrome：在谷歌应用商店安装谷歌官方扩展 “WebRTC Leak Prevent”，在插件选项里找到 “IP handling policy:” 选择第三项 “Disable non-proxied UDP”，并点击下方 “Apply settings”。只要是采用chromium内核的浏览器都可以使用此方法。
-扩展和插件区别 其实有很长一段时间我自己也将插件和扩展混为一谈，但其实两者是两个完全不同的概念。
-插件(plugins)：　在功能上，插件通常是用来渲染页面里的 或 标签。 插件通常用操作系统的本地代码（也叫“原生代码”）编写，可以调用操作系统的 API。 形式上，插件以动态库（Windows 上就是 DLL 文件）的方式，加载到浏览器的进程内。由于使用本地代码编写， 插件通常依赖于特定的操作系统（不同系统的插件不能混用）。</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://ilemonellen.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ilemonellen.github.io/about/</guid>
-      <description></description>
-    </item>
-    
-    
     
   </channel>
 </rss>

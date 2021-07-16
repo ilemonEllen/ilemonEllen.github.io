@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>DNS on FreedomCamp</title>
+    <link>https://ilemonellen.github.io/tags/dns/</link>
+    <description>Recent content in DNS on FreedomCamp</description>
+    <image>
+      <url>https://ilemonellen.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://ilemonellen.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 16 Jul 2021 11:17:37 +0900</lastBuildDate><atom:link href="https://ilemonellen.github.io/tags/dns/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>public dns service</title>
+      <link>https://ilemonellen.github.io/post/6/</link>
+      <pubDate>Fri, 16 Jul 2021 11:17:37 +0900</pubDate>
+      
+      <guid>https://ilemonellen.github.io/post/6/</guid>
+      <description>DNS简介
+public dns service (公共域名解析服务)：顾名思义，就是将我们访问的域名解析为对应的IP地址。
+例如：github.com是GitHub的域名
+但是我们在计算机上ping 这个域名的时候，我们就可以看到他的IP地址，下图所示：
+所以，我们知道的是一个网站的IP是不容易让人记住的，但是域名就相对来说更加好记一些。而DNS就是将我们记住的域名转为对应的IP，然后再向目标服务器发送数据请求。正因为如此，快速，安全的DNS就显得尤为重要。如果一个DNS的解析速度不够快，不够安全，那么你上网的速度和安全性都是很难得到保证的。所以在这里我整理了 两份公共DNS解析服务的列表,一份适合国内，一份适合有能力自由上网的人。
+公共DNS列表    供应商 首要DNS 备用DNS 说明     阿里DNS IPV4:223.5.5.5 IPV4:223.6.6.6 阿里的DNS解析服务应该是国内最好的了，基本上也没有被污染，解析速度也很不错，国内建议首选。   腾讯DNS IPV4:119.29.29.29  同时支持同时支持 DoH 与 DoT。   OneDNS 拦截版：117.50.11.11 52.80.66.66 纯净版117.50.10.10 52.80.52.52 微步在线出品，定位于小众用户的精品公共DNS服务，通过大数据分析实现了恶意网站拦截、广告过滤和上网加速功能   360公共DNS 中国电信/铁通/移动：101.226.4.6，218.30.118.6， 中国联通：123.125.81.6，140.207.198.6  拥有独立的虚拟根节点，以及运营商和360安全中心双重应急灾备机制，服务器集群覆盖全国28个省市和国际主要地区，能够提供最短路径的DNS解析响应   114DNS IPV4:114.114.114.114 IPV4:114.114.115.115 DNS解析成功率超高，与ISP的DNS相比，能访问更多的国内外网站.阿里之外的首选。       Provider Primary DNS Secondary DNS Description     Google IPV4:8.</description>
+    </item>
+    
+  </channel>
+</rss>
