@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>hugo on FreedomCamp</title>
+    <link>https://ilemonellen.github.io/tags/hugo/</link>
+    <description>Recent content in hugo on FreedomCamp</description>
+    <image>
+      <url>https://ilemonellen.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://ilemonellen.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 16 Jul 2021 17:08:07 +0900</lastBuildDate><atom:link href="https://ilemonellen.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何使用hugo&#43;github pages搭建一个个人博客</title>
+      <link>https://ilemonellen.github.io/post/hugo_blog/</link>
+      <pubDate>Fri, 16 Jul 2021 17:08:07 +0900</pubDate>
+      
+      <guid>https://ilemonellen.github.io/post/hugo_blog/</guid>
+      <description>&lt;p&gt;除了可以使用hexo来搭建个人博客之外，我们还可以使用hugo博客框架来搭建自己的个人博客。hugo和hexo相比搭建过程更加的简单快捷，需要的依赖较少，搭建过程不容易出错，对于新手来说更加的友好一些。所以如果你还没能成功搭建起hexo博客的话，那么不妨试试hugo+github pages搭建。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
