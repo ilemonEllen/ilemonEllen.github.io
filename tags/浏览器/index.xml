@@ -13,10 +13,10 @@
     <lastBuildDate>Fri, 16 Jul 2021 11:07:21 +0900</lastBuildDate><atom:link href="https://ilemonellen.github.io/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>浏览器上网的日常防护</title>
-      <link>https://ilemonellen.github.io/post/4/</link>
+      <link>https://ilemonellen.github.io/post/browser_protection/</link>
       <pubDate>Fri, 16 Jul 2021 11:07:21 +0900</pubDate>
       
-      <guid>https://ilemonellen.github.io/post/4/</guid>
+      <guid>https://ilemonellen.github.io/post/browser_protection/</guid>
       <description>关于网络安全和个人隐私保护的博客，我到时候应该会写一个系列的出来。这一期主要是说说比较容易上手，日常生活中很容易做到的一些防护措施，这一次的主要还是一些浏览器的使用技巧分享和简单的知识普及。
 在此之前，我们必须知道一个名词叫做——”浏览器指纹“。那么什么叫做浏览器指纹呢？下面有专门的文章会详细解释。现在我们只要知道通过浏览器指纹可以对用户进行画像，追踪。下面这个例子你应该在生活中遇到过。
 例如，你在一个网站上看到一个商品，点击了解了相关的信息，但是并没有购买，那么第二天当你打开类似的网站的时候，你就看到相关的广告推荐。这种现象并非偶然，而是通过一系列的技术手段实现的。作为个人我们能当然不希望自己在网络上的行为活动被一些幕后的个人和公司监视。所以我们需要了解相关的追踪方法然后采取相对应的措施。

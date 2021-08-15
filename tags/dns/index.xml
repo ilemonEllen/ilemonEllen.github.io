@@ -13,10 +13,10 @@
     <lastBuildDate>Fri, 16 Jul 2021 11:17:37 +0900</lastBuildDate><atom:link href="https://ilemonellen.github.io/tags/dns/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>public dns service</title>
-      <link>https://ilemonellen.github.io/post/6/</link>
+      <link>https://ilemonellen.github.io/post/public_dns_services/</link>
       <pubDate>Fri, 16 Jul 2021 11:17:37 +0900</pubDate>
       
-      <guid>https://ilemonellen.github.io/post/6/</guid>
+      <guid>https://ilemonellen.github.io/post/public_dns_services/</guid>
       <description>DNS简介
 public dns service (公共域名解析服务)：顾名思义，就是将我们访问的域名解析为对应的IP地址。
 例如：github.com是GitHub的域名

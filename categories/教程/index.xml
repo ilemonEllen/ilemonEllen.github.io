@@ -22,36 +22,16 @@
     
     <item>
       <title>public dns service</title>
-      <link>https://ilemonellen.github.io/post/6/</link>
+      <link>https://ilemonellen.github.io/post/public_dns_services/</link>
       <pubDate>Fri, 16 Jul 2021 11:17:37 +0900</pubDate>
       
-      <guid>https://ilemonellen.github.io/post/6/</guid>
+      <guid>https://ilemonellen.github.io/post/public_dns_services/</guid>
       <description>DNS简介
 public dns service (公共域名解析服务)：顾名思义，就是将我们访问的域名解析为对应的IP地址。
 例如：github.com是GitHub的域名
 但是我们在计算机上ping 这个域名的时候，我们就可以看到他的IP地址，下图所示：
 所以，我们知道的是一个网站的IP是不容易让人记住的，但是域名就相对来说更加好记一些。而DNS就是将我们记住的域名转为对应的IP，然后再向目标服务器发送数据请求。正因为如此，快速，安全的DNS就显得尤为重要。如果一个DNS的解析速度不够快，不够安全，那么你上网的速度和安全性都是很难得到保证的。所以在这里我整理了 两份公共DNS解析服务的列表,一份适合国内，一份适合有能力自由上网的人。
 公共DNS列表    供应商 首要DNS 备用DNS 说明     阿里DNS IPV4:223.5.5.5 IPV4:223.6.6.6 阿里的DNS解析服务应该是国内最好的了，基本上也没有被污染，解析速度也很不错，国内建议首选。   腾讯DNS IPV4:119.29.29.29  同时支持同时支持 DoH 与 DoT。   OneDNS 拦截版：117.50.11.11 52.80.66.66 纯净版117.50.10.10 52.80.52.52 微步在线出品，定位于小众用户的精品公共DNS服务，通过大数据分析实现了恶意网站拦截、广告过滤和上网加速功能   360公共DNS 中国电信/铁通/移动：101.226.4.6，218.30.118.6， 中国联通：123.125.81.6，140.207.198.6  拥有独立的虚拟根节点，以及运营商和360安全中心双重应急灾备机制，服务器集群覆盖全国28个省市和国际主要地区，能够提供最短路径的DNS解析响应   114DNS IPV4:114.114.114.114 IPV4:114.114.115.115 DNS解析成功率超高，与ISP的DNS相比，能访问更多的国内外网站.阿里之外的首选。       Provider Primary DNS Secondary DNS Description     Google IPV4:8.</description>
-    </item>
-    
-    <item>
-      <title>Windows Terminal配置</title>
-      <link>https://ilemonellen.github.io/post/5/</link>
-      <pubDate>Fri, 16 Jul 2021 11:12:29 +0900</pubDate>
-      
-      <guid>https://ilemonellen.github.io/post/5/</guid>
-      <description>Windows Terminal](https://github.com/microsoft/terminal)是一款集成了Windows上的PowerShell、CMD以及Windows Linux子系统的终端。Windows自身的命令控制台过于简陋，所以我们不妨使用Windows Terminal来替代cmd和power shell，只需要简单的配置一些功能，就能实现很多常用的Linux操作命令。过程如下：
- Vim配置 Vim是一款优秀的Linux文本编辑器。我们在Windows下编辑一些一些配置文件的时候很有作用。
-1.首先，我建议先去下载一个Vim,安装的时候注意路径中不要包含中文路径。
-2.然后，配置环境变量。找到Vim.exe的二进制文件位置，例如我的Vim安装位置在C:\Program Files (x86)\Vim\vim82,然后到设置——系统——关于——高级系统设置——环境变量——path——编辑——新建。然后将Vim.exe的路径复制粘贴上去。（例如我的就是C:\Program Files (x86)\Vim\vim82）。然后重新打开Windows Terminal终端输入vim -h检验环境变量是否配置成功。
-Git Bash配置 GitBash是一个用于MicrosoftWindows环境的应用程序，被集成在git下面。简明扼要的说一句就是能够实现很多Linux命令操作。更多资料——https://zh.wikipedia.org/zh-cn/Git
-其实，我自己在网上看到很多的将Git Bash配置到Windows Terminal下都是通过修改Windows Terminal中的JSON文件来实现的。但是实际中，Windows Terminal已经精简了很多的冗长的代码，添加配置文件也变得更加的简单。
-1.首先，你需要去下载一个Git 或者是Git for Windows,两者区别我自己目前使用的是Git。
-2.打开Windows Terminal终端，进入设置——添加配置文件。填写名称，选择文件路径（找到自己git bash.exe的二进制文件路径）例如我的git 的bash.exe在D:\BigDataTools\Git\Git\bin下。你可以添加一个图标（当然也可以不要）。之后重启终端启用git bash输入git &amp;ndash;version看看能否得到git版本，可以的话就代表成功了。
-但是，完成相关的bash配置之后我们会发现，当我们使用命令浏览磁盘下具有中文的文件夹时会出现乱码现象。其实，这个很好解决，我们只需要在Git文件路径下找到bash.bashrc文件，例如我的路径D:\BigDataTools\Git\Git\etc。 然后打开文件进行编辑，在文件后面添加
-export LANG=&amp;#34;zh_CN.UTF-8&amp;#34; export LC_ALL=&amp;#34;zh_CN.UTF-8&amp;#34; 之后，保存退出，重启终端，这个时候我们就会发现问题解决了。
-其实将Git Bash集成到Windows Terminal中之后，完全也可以使用Vim，不需要下载添加VIM。当然，你甚至可以选择一个cmder直接下载使用，内置git bash，无需任何的配置，省时省力。
- 参考博客：https://blog.csdn.net/jun8148/article/details/97245249 Bash图标: </description>
     </item>
     
   </channel>

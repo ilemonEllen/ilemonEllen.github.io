@@ -4,39 +4,7 @@ public dns service (公共域名解析服务)：顾名思义，就是将我们�
 例如：github.com是GitHub的域名
 但是我们在计算机上ping 这个域名的时候，我们就可以看到他的IP地址，下图所示：
 所以，我们知道的是一个网站的IP是不容易让人记住的，但是域名就相对来说更加好记一些。而DNS就是将我们记住的域名转为对应的IP，然后再向目标服务器发送数据请求。正因为如此，快速，安全的DNS就显得尤为重要。如果一个DNS的解析速度不够快，不够安全，那么你上网的速度和安全性都是很难得到保证的。所以在这里我整理了 两份公共DNS解析服务的列表,一份适合国内，一份适合有能力自由上网的人。
-公共DNS列表 供应商 首要DNS 备用DNS 说明 阿里DNS IPV4:223.5.5.5 IPV4:223.6.6.6 阿里的DNS解析服务应该是国内最好的了，基本上也没有被污染，解析速度也很不错，国内建议首选。 腾讯DNS IPV4:119.29.29.29 同时支持同时支持 DoH 与 DoT。 OneDNS 拦截版：117.50.11.11 52.80.66.66 纯净版117.50.10.10 52.80.52.52 微步在线出品，定位于小众用户的精品公共DNS服务，通过大数据分析实现了恶意网站拦截、广告过滤和上网加速功能 360公共DNS 中国电信/铁通/移动：101.226.4.6，218.30.118.6， 中国联通：123.125.81.6，140.207.198.6 拥有独立的虚拟根节点，以及运营商和360安全中心双重应急灾备机制，服务器集群覆盖全国28个省市和国际主要地区，能够提供最短路径的DNS解析响应 114DNS IPV4:114.114.114.114 IPV4:114.114.115.115 DNS解析成功率超高，与ISP的DNS相比，能访问更多的国内外网站.阿里之外的首选。 Provider Primary DNS Secondary DNS Description Google IPV4:8....</p></section><footer class=entry-footer>July 16, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;ilemonEllen</footer><a class=entry-link aria-label="post link to public dns service" href=https://ilemonellen.github.io/post/6/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2>Windows Terminal配置</h2></header><section class=entry-content><p>Windows Terminal](https://github.com/microsoft/terminal)是一款集成了Windows上的PowerShell、CMD以及Windows Linux子系统的终端。Windows自身的命令控制台过于简陋，所以我们不妨使用Windows Terminal来替代cmd和power shell，只需要简单的配置一些功能，就能实现很多常用的Linux操作命令。过程如下：
-Vim配置 Vim是一款优秀的Linux文本编辑器。我们在Windows下编辑一些一些配置文件的时候很有作用。
-1.首先，我建议先去下载一个Vim,安装的时候注意路径中不要包含中文路径。
-2.然后，配置环境变量。找到Vim.exe的二进制文件位置，例如我的Vim安装位置在C:\Program Files (x86)\Vim\vim82,然后到设置——系统——关于——高级系统设置——环境变量——path——编辑——新建。然后将Vim.exe的路径复制粘贴上去。（例如我的就是C:\Program Files (x86)\Vim\vim82）。然后重新打开Windows Terminal终端输入vim -h检验环境变量是否配置成功。
-Git Bash配置 GitBash是一个用于MicrosoftWindows环境的应用程序，被集成在git下面。简明扼要的说一句就是能够实现很多Linux命令操作。更多资料——https://zh.wikipedia.org/zh-cn/Git
-其实，我自己在网上看到很多的将Git Bash配置到Windows Terminal下都是通过修改Windows Terminal中的JSON文件来实现的。但是实际中，Windows Terminal已经精简了很多的冗长的代码，添加配置文件也变得更加的简单。
-1.首先，你需要去下载一个Git 或者是Git for Windows,两者区别我自己目前使用的是Git。
-2.打开Windows Terminal终端，进入设置——添加配置文件。填写名称，选择文件路径（找到自己git bash.exe的二进制文件路径）例如我的git 的bash.exe在D:\BigDataTools\Git\Git\bin下。你可以添加一个图标（当然也可以不要）。之后重启终端启用git bash输入git –version看看能否得到git版本，可以的话就代表成功了。
-但是，完成相关的bash配置之后我们会发现，当我们使用命令浏览磁盘下具有中文的文件夹时会出现乱码现象。其实，这个很好解决，我们只需要在Git文件路径下找到bash.bashrc文件，例如我的路径D:\BigDataTools\Git\Git\etc。 然后打开文件进行编辑，在文件后面添加
-export LANG="zh_CN.UTF-8" export LC_ALL="zh_CN.UTF-8" 之后，保存退出，重启终端，这个时候我们就会发现问题解决了。
-其实将Git Bash集成到Windows Terminal中之后，完全也可以使用Vim，不需要下载添加VIM。当然，你甚至可以选择一个cmder直接下载使用，内置git bash，无需任何的配置，省时省力。
-参考博客：https://blog.csdn.net/jun8148/article/details/97245249 Bash图标:</p></section><footer class=entry-footer>July 16, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;ilemonEllen</footer><a class=entry-link aria-label="post link to Windows Terminal配置" href=https://ilemonellen.github.io/post/5/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2>Windows中的使用技巧</h2></header><section class=entry-content><p>掌握一些Windows的实用小技巧，能更好优雅的使用Windows系统，同时也能让你的Windows使用起来更加的顺手。以下是个人总结的一些使用技巧。
-参数说明：Windows10pro，X64，20H2。
-清理系统盘 一般系统默认都是C盘，C盘中如果有过多的文件导致系统盘空间不足的话就会拖慢系统的运行速度。所以需要保持系统盘的健康。
-打开资源管理器，找到此电脑下的系统盘，单击右键选择属性，然后点击磁盘清理，再点击清理系统文件，勾选你想要清理的系统文件即可（一般来说勾选临时文件不会有什么影响的）。
-打开Windows的设置，依次点击系统-存储-打开存储感知配置，当然你可以进一步设置系统自动清理的间隔时间。
-搜索框中搜索“运行”打开，里面输入temp，然后回车（或者你可以进入系统盘-Windows-temp）。然后将temp文件夹下的所有临时文件删除(shift+delete) 。再次打开“运行”输入%temp%回车（或者你可以在C:\Users\PC用户名\AppData\Local\Temp）下面找到这些文件，然后按下shift+delete.
-定时清空回收站：无论你是直接右键删除文件，还是上面的shift+delete删除，这都不能将文件彻底的删除掉。系统还是会保留还原点在回收站中，而回收 站里的文件都将保留在系统盘上。所以定时清空你的回收站是很有必要的一件事情。
-定时清除浏览器中的缓存和cookie。浏览器一般都是默认安装在系统盘中，所以你在浏览网页时候产生的缓存就会保存在你的系统盘下面，特别是对于cookie 的清理，定时的清理也能够保护自己的隐私。
-借助第三方的清理工具：你可能觉得单纯的系统措施不能达到你预想的效果，或者是觉得操作过于繁琐，那么你可以试试借助第三方的工具来实现清理。 Dism++:这是一款很实用的工具，你也可以用它来清理你不想要的文件和缓存。当然，如果你也有有一些偏执的话，你不妨再下载一个**Bleach bit**专门用来清理浏览器缓存。不过，卸载也是其中重要的一个组成部分，单纯的Windows卸载面板是没有办法将一个软件彻底卸载干净的，里面常常还会有注册表的残留。所以，采用专业的卸载工具就显得极为重要——**geek uninstaller**是一个比较不错的选择。
-关闭不必要的自启动选项 过多的自启动选项是会拖慢系统的开机速度的。所以我们需要对一些自启动选项实行禁用。ctrl+shift+esc打开任务管理器找到上面的启动项，然后将不必要的启动项右键禁用掉即可。当然你也可以在设置-应用-启动项中找到一些自启动的应用，将对系统影响较小的应用或者程序关闭掉即可。
-清除电脑上的恶意广告程序 搜索框中搜索cmd打开命令控制符在里面输入mrt，然后回车就会弹出一个Windows内置的清除程序，选择一个扫描模式，等待扫描完成,点击清除就可以。不过，这种办法只适用于一些小儿科式的恶意程序，真正的恶意程序还是需要借助专业的杀毒工具来处理，除此之外软件下载的渠道的选择和软件本身的选择（有些软件本身就是流氓性质，例如金山毒霸和腾讯电脑管家之类的）也是十分的重要。
-修复系统盘文件 如果你不小心删除了系统盘中比较重要的文件，但是自己又不知道具体是哪些。那么你可以使用系统文件检查器工具修复丢失或损坏的文件。
-使用管理员权限打开命令提示符：输入Dism /Online /Cleanup-Image /ScanHealth（扫描全部系统文件和系统映像文件是否与官方版一致）
-等待扫描完成：输入Dism /Online /Cleanup-Image /CheckHealth（这里检查文件的损坏程度，结果一般有两种：一般性损坏可以修复和情况严重完全无法修复）
-如果损坏可以被修复的话，直接输入DISM /Online /Cleanup-image /RestoreHealth（这里是联网将系统映像文件中与官方文件不相同的文件还原成官方系统的源文件，但是系统中安装的软件和用户设置保留不变）
-最后只需要耐心等待一段时间就可以了。更多的详情可以参考官方给出的答案：https://bit.ly/3wwdc3U
-显示文件扩展名和隐藏文件 有些时候你在你的资源管理器当中可能无法看到文件的扩展名或者是某些隐藏的文件。这个时候你就需要打开资源管理器-点击上面查看-在隐藏文件和展示文件扩展名前面打勾即可。
-启用Windows高级搜索 Windows的文件搜索是一个比较鸡肋的方面，你可以通过进入设置-搜索-搜索Windows中的经典改为高级。当然你也可以使用第三方的搜索工具，例如**everything**,**listary**等来提高你的文件搜索效率。
-开启使用bitlocker 如果你的系统是Windows专业版，那么强烈建议开启bitlocker来保护你的系统盘远离恶意的脚本和程序。你只需要在控制面板中找到bitlocker然后将其打开就可以了（需要保护好自己的bitlocker密钥文件，否则里面的文件将再也无法打开）。
-优雅的使用Microsoft拼音输入法 我们进入设置-时间和语言-语言-语言偏好-点击简体中文-点击更多选择-在键盘中找到Microsoft拼音-点击更多选择，然后就可以对微软拼音输入进行个性化的设置，强烈建议在高级选项中打开U模式输入和V模式输入，前者可以使用U加上陌生字的一部分来实现查字功能，后者主要用来快速输入时间，日期等信息。你甚至可以词典中加入你想要的备用句子。
-光标醒目 如果你想要自己鼠标的指针更加的醒目，那么你可以在设置-轻松使用-指针里面找到指针这一项，然后可以根据自己的需要来对光标进行大小和颜色的调整。
-快捷键使用 如果你是一个习惯使用快捷键进行操作的人，那么你大概率可能需要对某个应用进行快捷键操作。这个时候你可以在桌面上找到你想要添加快捷键启动的应用快捷方式，然后选中右击-选择属性-点击快捷方式在下面的快捷键那一栏中按下你想要设置的快捷键，然后应用，确定就可以了。...</p></section><footer class=entry-footer>July 16, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;ilemonEllen</footer><a class=entry-link aria-label="post link to Windows中的使用技巧" href=https://ilemonellen.github.io/post/3/></a></article></main><footer class=footer><span>&copy; 2021 <a href=https://ilemonellen.github.io>FreedomCamp</a></span>
+公共DNS列表 供应商 首要DNS 备用DNS 说明 阿里DNS IPV4:223.5.5.5 IPV4:223.6.6.6 阿里的DNS解析服务应该是国内最好的了，基本上也没有被污染，解析速度也很不错，国内建议首选。 腾讯DNS IPV4:119.29.29.29 同时支持同时支持 DoH 与 DoT。 OneDNS 拦截版：117.50.11.11 52.80.66.66 纯净版117.50.10.10 52.80.52.52 微步在线出品，定位于小众用户的精品公共DNS服务，通过大数据分析实现了恶意网站拦截、广告过滤和上网加速功能 360公共DNS 中国电信/铁通/移动：101.226.4.6，218.30.118.6， 中国联通：123.125.81.6，140.207.198.6 拥有独立的虚拟根节点，以及运营商和360安全中心双重应急灾备机制，服务器集群覆盖全国28个省市和国际主要地区，能够提供最短路径的DNS解析响应 114DNS IPV4:114.114.114.114 IPV4:114.114.115.115 DNS解析成功率超高，与ISP的DNS相比，能访问更多的国内外网站.阿里之外的首选。 Provider Primary DNS Secondary DNS Description Google IPV4:8....</p></section><footer class=entry-footer>July 16, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;ilemonEllen</footer><a class=entry-link aria-label="post link to public dns service" href=https://ilemonellen.github.io/post/public_dns_services/></a></article></main><footer class=footer><span>&copy; 2021 <a href=https://ilemonellen.github.io>FreedomCamp</a></span>
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
         <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)"><button class=top-link id=top-link type=button accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></button></a>
